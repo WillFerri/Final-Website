@@ -1,0 +1,159 @@
+h1 {
+    color: navy;
+    display: inline; 
+    text-align: center;
+    font-family: 'Kumar One';
+    text-decoration:line-through;
+    background-color: white;
+    position: relative;
+    top: 275px;
+    right: -515px;
+    border: 5px solid navy;
+    z-index: 999999;
+}
+
+#banner {
+    position: relative;
+    top: -43px;
+    width: 150px;
+    height: 150px;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border: solid navy;
+    border-width: 18px;
+    gap: 20px;
+    margin-bottom: -110px;
+    background-color: navy;
+}
+
+#litem {
+    background-color: navy;
+    padding: 10px;
+    margin: 30px;
+    text-align: center;
+    border: solid white 5px;
+    width: 160px;
+    height: 27px;
+    z-index: 999999;
+}
+
+#jotem {
+    color:white;
+    font-size: 18px;
+    font-family: 'Apple Chancery', sans-serif;
+    z-index: 999999;
+}
+
+#litem:hover {
+    background-color: white;
+}
+
+#jotem:hover {
+    color:navy;
+    cursor: pointer;
+}
+
+main {
+    font-size: 35px; 
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: navy;
+}
+
+#cover-img {
+    position: relative;
+    width: 60%;
+    height: 60%;
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 110px;
+    margin-bottom: -153px;
+}
+
+#slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+    border: 10px solid white;
+    position: relative;
+    top: -28px;
+}
+ 
+/* Style each of the sides 
+with a fixed width and height */
+ 
+.slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+}
+ 
+/* Add animation to the slides */
+ 
+.slide-wrapper {
+     
+    /* Calculate the total width on the
+  basis of number of slides */
+    width: calc(728px * 5);
+     
+    /* Specify the animation with the
+  duration and speed */
+    animation: slide 10s ease infinite;
+}
+ 
+ 
+/* Define the animation 
+for the slideshow */
+ 
+@keyframes slide {
+     
+    /* Calculate the margin-left for 
+  each of the slides */
+    20% {
+        margin-left: 0px;
+    }
+    40% {
+        margin-left: calc(-728px * 1);
+    }
+    60% {
+        margin-left: calc(-728px * 2);
+    }
+    80% {
+        margin-left: calc(-728px * 3);
+    }
+    100% {
+        margin-left: calc(-728px * 4);
+    }
+}
+  
+
+footer div {
+    display: flex;
+    flex-direction: row;
+    gap: 500px;
+    justify-content: center;
+    border: 5px solid black;
+}
+
+section {
+    border: 5px solid black;
+    font-family: 'Graduate';
+    font-size: 18px;
+    color: white;
+    line-height: 50px;
+}
+
+#headsec {
+    background-color: black;
+    margin-top: -50px;
+}
+
+#butt:hover {
+    color: white;
+    background-color: black;
+}
